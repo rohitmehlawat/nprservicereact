@@ -78,7 +78,7 @@ class AuthForm extends React.Component {
                 this.setState({
                     buttonText:"loading......"
                 })
-                postData("http://localhost:8080/login", requestData)
+                postData("https://nprservice.herokuapp.com/login", requestData)
                     .then((response) => {
                         if (response.headers.has("authorization")) {
                             localStorage.setItem("keyId", response.headers.get("authorization"));

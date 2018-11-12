@@ -7,7 +7,7 @@ const Footer = () => {
     <Navbar>
       <Nav navbar>
         <NavItem>
-          2018 theme
+          2018 NPR Supporting Services
         </NavItem>
       </Nav>
     </Navbar>

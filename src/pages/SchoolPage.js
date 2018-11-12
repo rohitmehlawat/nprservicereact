@@ -163,7 +163,7 @@ class SchoolPage extends React.Component {
             }
         }
         if (dataPost == true) {
-            postData('http://localhost:8080/addSchool', this.state.school, 'post')
+            postData('https://nprservice.herokuapp.com/addSchool', this.state.school, 'post')
                 .then((response) => {
                     return response.json()
                 })
@@ -204,7 +204,7 @@ class SchoolPage extends React.Component {
             }
         }
         if(dataPost==true){
-            postData('http://localhost:8080/updateSchool', this.state.school, 'post')
+            postData('https://nprservice.herokuapp.com/updateSchool', this.state.school, 'post')
                 .then((response) => {
                     return response.json()
                 })
@@ -233,7 +233,7 @@ class SchoolPage extends React.Component {
 
     loadTableData() {
         let keyId = localStorage.getItem("keyId");
-        fetch('http://localhost:8080/getAllSchool', {
+        fetch('https://nprservice.herokuapp.com/getAllSchool', {
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
                 "Authorization": keyId

@@ -66,7 +66,7 @@ class Header extends React.Component {
 
   componentWillMount(){
     let keyId=localStorage.getItem("keyId");
-    fetch("http://localhost:8080/getUser",{
+    fetch("https://nprservice.herokuapp.com/getUser",{
         headers: {
             "Content-Type": "application/json; charset=utf-8",
             "Authorization":keyId
